@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+}
+
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+    #24211E 0%, rgba(42, 39, 36, 0.97) 36.44%,
+    rgba(74, 70, 66, 0.78) 72.88%,
+    rgba(248, 238, 223, 0.36) 109.32%);
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+}
+.banner .btn-back{
+    z-index: 10;
+    font-size: 10px;
+    text-decoration: none;
+    color: #8F8A87;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    position: absolute;
+}
+.banner .banner-text {
+    padding: 60px 20px;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    color: #F9F4F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.banner .banner-text h2 {
+    font-size: 28px;
+    margin: 10px 0px 0px 0px;
+    font-weight: 400;
+}
+.banner .banner-text p {
+    margin: 0px 0px 40px 0px;
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.banner .bg-fondo{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.banner .product-img{
+    width: 100%;
+    object-fit: cover;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    bottom: -240px;
+    position: absolute;
+}
+
+.banner .banner-button {
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #381E29;
+    font-weight: 500;
+    width: 200px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #FFF;
+}
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 24px;
+  height: 24px;
+}
+.swiper-button-next svg {
+    position: absolute;
+    right: 2rem;
+  }
+  .swiper-button-prev svg {
+    position: absolute;
+    left: 2rem;
+  }
+  
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after {
+    content: "" !important;
+  }
+  
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-next:after {
+    content: "" !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #000 !important ;
+  }
+  
+  .swiper-pagination-bullet {
+    border: 1px solid #000;
+  }
+  
+  @media only screen and (min-width: 320px) {
+        .swiper-button-next,.swiper-button-prev{
+            display: none;
+        }
+  }
