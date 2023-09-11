@@ -132,3 +132,36 @@ body {
   .swiper-button-next,.swiper-button-prev{
     display: none !important;
 }
+
+@media only screen and (min-width:768px){
+    .swiper-wrapper {
+        width: 100%;
+        height: 100vh !important;
+    }
+    
+    .swiper-slide { 
+        width: 100%;
+        height: 40%;
+    }
+    .banner .product-img{
+        width: 100%;
+        position: absolute;
+        top: 20%;
+    }
+}
+@media only screen and (min-width:1024px){
+    .swiper-wrapper {
+        width: 100%;
+        height: 520px !important;
+    }
+    
+    .swiper-slide { 
+        width: 100%;
+        height: 100%;
+    }
+    .banner .product-img{
+        width: 50%;
+        position: absolute;
+        top:-20%;   
+    }
+}
