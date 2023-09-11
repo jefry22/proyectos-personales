@@ -132,154 +132,76 @@ body {
   .swiper-button-next,.swiper-button-prev{
     display: none !important;
 }
-/* 
-  @media only screen and(min-width:380px) {
-    .banner .product-img{
-        position: absolute;
-        width: 100%;
-        bottom: -70%;
-    }   
-  } */
-  @media only screen  and(max-width:480px){
-    .banner .banner-text {
-        padding: 60px 20px;
-        
-    }
-    
-  }
-  /*   
-  @media only screen and (max-width: 425px) {
-    .swiper-wrapper {
+
+@media only screen and (min-width: 768px) {
+    .swiper-wrapper{
         width: 100%;
         height: 100vh;
     }
+    .swiper-slide{
+        height: 100%;
+    }
+    .banner .product-img{
+        width: 60%;
+        position: absolute;
+        bottom: 0%;
+        left: -60%;
+    }
+    .banner .banner-text{
+        /* background: red; */
+        width: 50%;
+        display: flex;
+        margin-top: 12%;
+    }
+}
+
+@media only screen and (min-width:1024px){
     
-    .swiper-slide {
-        width: 100%;
-        height: 80% !important;
-        position: relative;
+    .banner .product-img{
+        width: 50%;
+        position: absolute;
+        bottom: -10%;
+        left: 46% !important;
     }
-        .swiper-button-next,.swiper-button-prev{
-            display: none !important;
-        }
-        .banner-text{
-            width: 100%;
-        }
-        .banner .product-img{
-            position: absolute;
-            width: 230px !important;
-            height: 280px;
-            object-fit: cover;
-            z-index: 20;
-            top:240px;
-            left: 15%;
-        }
-        .banner-text {
-            display: flex;
-            align-items: start;
-            padding: 20px;
-        }
-        .banner-text h2{
-            padding-right: 20px;
-        }
-  }
-
-  @media only screen and (max-width: 780px) {
-
-        .banner {
-            background: #000;
-        }
-        .swiper-button-next,.swiper-button-prev{
-            display: block;
-        }
-        .banner .product-img{
-            width: 50%;
-            object-fit: cover;
-            z-index: 20;
-            display: flex;
-            right: 200px;
-            justify-content: center;
-            bottom: -240px;
-            position: absolute;
-        }
+    .gradient-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 72%;
+        height: 100%;
+        background: linear-gradient(90deg, #24211E 0%, #35302C 44.62%, #EBDACA 100%);
     }
-
-    @media only screen and (min-width: 1024px) {
-        .swiper-wrapper {
-            width: 100%;
-            height: 80vh !important;
-        }
-        .swiper-slide {
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
-        .gradient-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 72%;
-            height: 100%;
-            background: linear-gradient(90deg, #24211E 0%, #35302C 44.62%, #EBDACA 100%);
-        }
-        
-        .swiper-button-next,.swiper-button-prev{
-            display: block;
-        }
-        .banner{
-            position: relative;
-        }
-        .banner .product-img{
-            width: 20%;
-            object-fit: cover;
-            z-index: 20;
-            display: flex;
-            top: -80px;
-            right: 40px;
-            justify-content: center;
-            position: absolute;
-        }
-        .banner .banner-text {
-            height: 100%;
-            width: 50%;
-            z-index: 10;
-            position: absolute;
-            right: 40%;
-            top:-50px;
-            color: #F9F4F0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-        }
-        .banner .btn-back{
-            position: absolute;
-            z-index: 20;
-            left: 7%;
-            top: 10%;
-        }
-        .banner .banner-text a{
-            margin-bottom: 40px;
-        }
-        .banner .banner-text p {
-            margin: 0px 0px 60px 0px;
-            color: rgba(255, 255, 255, 0.50);
-            font-family: Montserrat;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-        }
-        .banner .banner-text h2{
-            font-size: 48px;
-            padding-right: 60px;
-            margin-bottom: 40px;
-        }
-        .swiper-pagination-bullet-active {
-            opacity: var(--swiper-pagination-bullet-opacity, 1);
-            background: #ffffff !important ;
-          }
-          .swiper-pagination-bullet {
-            border: 1px solid #ffffff;
-          }
-          
-    } */
+    .swiper-button-next,.swiper-button-prev{
+        display: block !important;
+    }
+    .banner{
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+    }
+    .banner .banner-text{
+        /* background: red; */
+        width: 45%;
+        height: 100%;
+        display: flex;
+        padding-left: 120px;
+        /* justify-content: center; */
+        /* height: 100% !important; */
+        /* margin-top: 12%; */
+    }
+    .banner-text h2{
+        font-size: 48px !important;
+    }
+    .banner-text p{
+        font-size: 20px !important;
+    }
+    .swiper-pagination-bullet-active {
+        opacity: var(--swiper-pagination-bullet-opacity, 1);
+        background: #ffffff !important ;
+    }
+    .swiper-pagination-bullet {
+        border: 1px solid #ffffff;
+    }
+}
