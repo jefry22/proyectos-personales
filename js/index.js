@@ -1,32 +1,27 @@
-var swiper = new Swiper(".slide-container", {
-    slidesPerView: 4,
-    spaceBetween: 10,
-    sliderPerGroup: 4,
-    loop: true,
-    centerSlide: "true",
-    fade: "true",
-    grabCursor: "true",
-    pagination: {
-    el: '.swiper-pagination',
-  },
-    
+var swiper = new Swiper(".slide-marcas", {
+  // slidesPerView: 4,
+  // spaceBetween: 2,
+  // sliderPerGroup: 4,
+  loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
 
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-      },
-      520: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      1000: {
-        slidesPerView: 4,
-      },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
     },
-  });
-
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1000: {
+      slidesPerView: 4,
+    },
+  },
+});
 
   var swiper = new Swiper(".swiper-tienda",{
     loop: true,
@@ -46,31 +41,3 @@ var swiper = new Swiper(".slide-container", {
     },
   })
 
-
-
-  var swiper = new Swiper(".slide-container-especial", {
-    slidesPerView: 4,
-    spaceBetween: 10,
-    sliderPerGroup: 4,
-    loop: true,
-    centerSlide: "true",
-    fade: "true",
-    grabCursor: "true",
-    pagination: {
-    el: '.swiper-pagination',
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      520: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      1000: {
-        slidesPerView: 3,
-      },
-    },
-  });

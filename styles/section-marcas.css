@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+}
+
+.section-marcas {
+    width: 100%;
+}
+
+.section-title {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+}
+
+.section-title img {
+    width: 5%;
+}
+
+.section-content {
+    width: 100%;
+}
+.section-marcas{
+    padding: 0px 0px;
+}
+.card-marca {
+    width: 150px;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #24211E;
+    border-radius: 5px;
+}
+
+.card-marca img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.card-marca img:nth-child(2) {
+    width: 90%;
+}
+
+
+@media only screen and (min-width:768px) {
+    .slide-marcas {
+        /* background: red; */
+        width: 100%;
+        padding: 10px !important;
+    }
+
+    .section-marcas {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-title{
+        width: 90%;
+    }
+    .section-title img{
+        width: 2%;
+    }
+    .card-marca {
+        width: 240px;
+        height: 300px;
+    }
+
+    .card-marca img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .section-title{
+        padding: 40px 40px 20px 40px;
+    }
+    .slide-marcas {
+        padding: 0px !important;
+    }
+    .section-content{
+        width: 80%;
+        padding: 0px 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .card-marca{
+        width: 200px;
+    }
+}
